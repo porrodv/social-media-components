@@ -1,0 +1,54 @@
+.ig-follow-card {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.ig-follow-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+}
+.ig-follow-card header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ig-follow-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.ig-follow-card .info span {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.ig-follow-card .btn-follow {
+  background-color: rgb(0, 149, 246);
+  color: rgb(245, 245, 245);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 7px 16px;
+  outline: none;
+}
+.ig-follow-card .btn-follow.is-following {
+  background-color: rgb(245, 245, 245);
+  color: #000;
+}
+
+.ig-follow-card .btn-follow:hover {
+  border-color: transparent;
+  background-color: rgb(24, 119, 242);
+  transition: 0.2s ease color;
+}
+.ig-follow-card .btn-follow.is-following:hover {
+  background-color: rgb(219, 219, 219);
+  color: #000;
+}
+
+.ig-follow-card aside {
+  display: flex;
+  align-items: center;
+}

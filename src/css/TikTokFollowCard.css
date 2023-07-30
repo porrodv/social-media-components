@@ -1,0 +1,74 @@
+.tt-follow-card {
+  margin: 0;
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 210px;
+  height: 300px;
+}
+
+.tt-follow-card .bg-img {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.tt-follow-card .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.tt-follow-card .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+}
+
+.tt-follow-card .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+}
+
+.tt-follow-card .info h5,
+.tt-follow-card .info h3 {
+  margin: 0;
+}
+
+.tt-follow-card .info .btn-follow {
+  margin-top: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(255, 59, 92);
+  color: #eee;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  width: 160px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.01s;
+}
+
+.tt-follow-card .info .btn-follow.is-following {
+  background-color: #eee;
+  color: #000;
+}
+
+.tt-follow-card .info .btn-follow:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+    rgb(254, 44, 85);
+}
+
+.tt-follow-card .info .btn-follow.is-following:hover {
+  background-color: rgb(219, 219, 219);
+}
